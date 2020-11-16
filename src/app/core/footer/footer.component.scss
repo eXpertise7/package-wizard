@@ -1,0 +1,18 @@
+@import '../../../assets/scss/variables';
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    height: 40px;
+    width: 100%;
+    font-size: 20px;
+}
+
+.logo {
+    width: 70px;
+    height: 20px;
+    margin: 5px 0;
+}

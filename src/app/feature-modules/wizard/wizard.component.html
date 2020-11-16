@@ -1,0 +1,37 @@
+<div class="row">
+    <div class="col mt-3">
+        <ul>
+            <li [ngClass]="!steps[0].Finished ? 'active' : 'inactive'">
+                Package
+                <i class="m-icon" [ngClass]="steps[0].Finished ? 'cil-check-circle green' : 'cil-circle'"></i>
+            </li>
+            <li><i class="cil-arrow-right"></i></li>
+            <li [ngClass]="(steps[0].Finished && !steps[1].Finished) ? 'active' : 'inactive'">
+                Application variables
+                <i class="m-icon" [ngClass]="steps[1].Finished ? 'cil-check-circle green' : 'cil-circle'"></i>
+            </li>
+            <li><i class="cil-arrow-right"></i></li>
+            <li [ngClass]="(steps[1].Finished && !steps[2].Finished) ? 'active' : 'inactive'">
+                Installation
+                <i class="m-icon" [ngClass]="steps[2].Finished ? 'cil-check-circle green' : 'cil-circle'"></i>
+            </li>
+            <li><i class="cil-arrow-right"></i></li>
+            <li [ngClass]="(steps[2].Finished && !steps[3].Finished) ? 'active' : 'inactive'">
+                Uninstallation
+                <i class="m-icon" [ngClass]="steps[3].Finished ? 'cil-check-circle green' : 'cil-circle'"></i>
+            </li>
+            <li><i class="cil-arrow-right"></i></li>
+            <li [ngClass]="(steps[3].Finished && !steps[4].Finished) ? 'active' : 'inactive'">
+                Completion
+                <i class="m-icon" [ngClass]="steps[4].Finished ? 'cil-check-circle green' : 'cil-circle'"></i>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12 mt-3">
+        <router-outlet></router-outlet>
+    </div>
+</div>
+

@@ -1,0 +1,83 @@
+<div class="mt-3 mb-3 page_container">
+    <div class="row">
+        <div class="col-2 mt-1">
+            Resulting script command line
+        </div>
+
+        <div class="input-group col-11 mt-1">
+            <input type="text" class="form-control" disabled>
+        </div>
+    </div>
+
+    <nav class="navbar bg-secondary footer mt-3">
+        Toolkit function builder
+    </nav>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkupToolkit">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active">Choose a function <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link">Choose the parameters</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="mt-2">
+        <table class="table">
+            <thead>
+            <tr>
+                <th scope="col">Function</th>
+                <th scope="col">Description</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th scope="row">Execute-MSP</th>
+                <td>Executes msiexec.exe to perform the following actions for MSI & MSP files and MSI product codes;
+                    install, uninstall, patch, repair, active setup.
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">Remove-MSIApplications</th>
+                <td>Removes all MSI applications matching the specified application name.</td>
+            </tr>
+            <tr>
+                <th scope="row">Execute-Process</th>
+                <td>Executes a process, e.g. a file included in the Files directory of the App Deploy Toolkit, or a file
+                    on the local machine.
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">Get-MsiExitCodeMessage</th>
+                <td>Get message for MSI error code by reading it from msimsg.dll.</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <nav class="navbar bg-secondary footer mt-3">
+        Script code for installation
+    </nav>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active">Pre-installation <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link">Installation</a>
+                <a class="nav-item nav-link">Post-installation</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="input-group">
+        <textarea class="form-control" aria-label="With textarea" rows="2"
+                  placeholder="[string]$installPhase = 'Pre-installation'"></textarea>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col">
+        <button type="button" class="btn btn-primary mr-2" (click)="previousStep()">Previous step</button>
+        <button type="button" class="btn btn-primary" (click)="nextStep()">Next step</button>
+    </div>
+</div>

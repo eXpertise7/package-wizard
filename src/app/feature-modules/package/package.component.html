@@ -1,0 +1,122 @@
+<div class="mt-3 mb-3 page_container">
+    <div class="row">
+        <div class="col-1">
+            <i class="cil-laptop mr-2"></i>
+            <span>
+                Type
+            </span>
+        </div>
+
+        <div class="col-11">
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="type_button"
+                        data-toggle="dropdown" aria-expanded="false">
+                    Choose
+                </button>
+                <div class="dropdown-menu" aria-labelledby="type_button">
+                    <a class="dropdown-item" href="#">Application</a>
+                    <a class="dropdown-item" href="#">User configuration</a>
+                    <a class="dropdown-item" href="#">System configuration</a>
+                    <a class="dropdown-item" href="#">Driver</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-2">
+        <div class="col-1">
+            <i class="cil-code mr-2"></i>
+            <span>
+                Directories
+            </span>
+        </div>
+
+        <div class="col-11">
+            <button type="button" class="btn btn-secondary mr-3">
+                Add directory
+            </button>
+
+            <button type="button" class="btn btn-secondary" disabled>
+                Remove directory
+            </button>
+        </div>
+    </div>
+
+    <div class="row mt-2">
+        <div class="col-1">
+            <i class="cil-file mr-2"></i>
+            <span>
+                Files
+            </span>
+        </div>
+
+        <div class="col-11">
+            <button type="button" class="btn btn-secondary mr-3">
+                Add file(s)
+            </button>
+
+            <button type="button" class="btn btn-secondary" disabled>
+                Remove file
+            </button>
+        </div>
+
+        <div class="col-1 mb-1 mt-2">
+            <i class="cil-user mr-2"></i>
+            <span>
+                Name
+            </span>
+        </div>
+
+        <div class="input-group col-11 mb-1 mt-2">
+            <input type="text" class="form-control"
+                   placeholder="F:\VAaD_2003\Citrix_Virtual_Apps_and_Desktops_7_2003\x64\ProfileManagement_profilemgt_x64.msi"
+                   disabled>
+        </div>
+
+        <div class="col-1 mb-1 mt-2">
+            <i class="cil-window-restore mr-2"></i>
+            <span>
+                Path
+            </span>
+        </div>
+
+        <div class="input-group col-11 mb-1 mt-2">
+            <input type="text" class="form-control" placeholder="profilemgt_x64.msi" aria-label="Recipient's username"
+                   aria-describedby="basic-addon2" disabled>
+        </div>
+
+    </div>
+
+    <div class="row mt-2">
+        <div class="col-1">
+            <i class="cil-data-transfer-down mr-2"></i>
+            <span>
+                Support files
+            </span>
+        </div>
+
+        <div class="col-11">
+            <button type="button" class="btn btn-secondary mr-3">
+                Add file(s)
+            </button>
+
+            <button type="button" class="btn btn-secondary mr-3">
+                Add directory
+            </button>
+
+            <button type="button" class="btn btn-secondary" disabled>
+                Remove file
+            </button>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col">
+        <button type="button" class="btn btn-primary" (click)="nextStep()">
+            Next step
+        </button>
+    </div>
+</div>
+
+
